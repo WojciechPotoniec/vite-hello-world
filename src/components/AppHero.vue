@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img class="img-fluid" src="/public/img/jumbo.png" alt="Hero-image">
+        <img :src="image" alt="Hero-image">
     </div>
 </template>
 
@@ -9,12 +9,14 @@
         name: "AppHero",
         data() {
             return {
-                
+                image: 'img/jumbo.png'
             }
         }
     }
 </script>
 
 <style scoped>
-
+    img{
+        width: 100%;
+    }
 </style>
